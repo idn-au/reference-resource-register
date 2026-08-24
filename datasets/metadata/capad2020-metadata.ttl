@@ -17,7 +17,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:member
         <https://data.idnau.org/pid/capad2020/ipa> ,
         <https://data.idnau.org/pid/capad2020/npa> ;
-    schema:additionalType <https://data.idnau.org/pid/vocab/cat-obj-types/SpatialDataset> ;
+    schema:additionalType 
+        <https://data.idnau.org/pid/vocab/cat-obj-types/SpatialDataset> ;
+ #      <https://data.idnau.org/pid/vocab/cat-obj-types/ReferenceDataset> ; 
     schema:citation "https://data.gov.au/dataset/ds-environment-9984a9fd-3dd0-4e38-bfbd-7e788fa851a1/details?q=capad%202020"^^xsd:anyURI ;
     schema:creator <https://linked.data.gov.au/org/idn> ;
     schema:dateCreated "2023-05-15"^^xsd:date ;
