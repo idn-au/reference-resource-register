@@ -81,6 +81,19 @@ schema:Book
     skos:definition "A book."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Book"@en ;
+    skos:related schema:Chapter ;
+    skos:closeMatch <http://purl.org/spar/fabio/Book> ;
+    skos:topConceptOf cs: ;
+.
+
+schema:Chapter
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://schema.org> ;
+    skos:definition "One of the sections into which a book is divided. A chapter usually has a section number or a name."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Chapter"@en ;
+    skos:related schema:Book ;
+    skos:closeMatch <http://purl.org/spar/fabio/BookChapter> ;
     skos:topConceptOf cs: ;
 .
 
@@ -90,6 +103,7 @@ schema:Dataset
     skos:definition "A body of structured information describing some topic(s) of interest."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Dataset"@en ;
+    skos:closeMatch <http://purl.org/spar/fabio/Dataset> ;
     skos:topConceptOf cs: ;
 .
 
@@ -118,9 +132,9 @@ schema:Movie
     skos:inScheme cs: ;
     skos:prefLabel "Movie"@en ;
     skos:topConceptOf cs: ;
+    skos:related schema:VideoObject ;
     skos:historyNote "2026-09 Superseded by schema:VideoObject"@en ;
     schema:status <https://linked.data.gov.au/def/reg-statuses/superseded> ;
-    rdfs:seeAlso schema:VideoObject ;
 .
 
 schema:Painting
@@ -151,6 +165,14 @@ schema:Report
     skos:topConceptOf cs: ;
 .
 
+schema:ResearchProject
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://schema.org> ;
+    skos:definition "A Research project."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Research Project"@en ;
+    skos:topConceptOf cs: ;
+.
 schema:ScholarlyArticle
     a skos:Concept ;
     rdfs:isDefinedBy <https://schema.org> ;
@@ -158,6 +180,7 @@ schema:ScholarlyArticle
     skos:inScheme cs: ;
     skos:prefLabel "Scholarly article"@en ;
     skos:broader schema:Article ;
+    skos:related schema:Thesis ;
     skos:topConceptOf cs: ;
 .
 
@@ -195,6 +218,7 @@ schema:Thesis
     skos:inScheme cs: ;
     skos:prefLabel "Thesis"@en ;
     skos:topConceptOf cs: ;
+    skos:related schema:ScholarlyArticle ;
     schema:isPartOf <https://bib.schema.org> ;
     schema:source "http://www.productontology.org/id/Thesis"^^xsd:anyURI ;
 .
@@ -223,6 +247,7 @@ schema:WebSite
     skos:definition "A WebSite is a set of related web pages and other items typically served from a single web domain and accessible via URLs."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Web Site"@en ;
+    skos:closeMatch <http://purl.org/spar/fabio/WebSite> ;
     skos:topConceptOf cs: ;
 .
 
@@ -238,6 +263,7 @@ schema:Article
     skos:definition "An article, such as a news article or piece of investigative report. Newspapers and magazines have articles of many different types and this is intended to cover them all.\\n\\nSee also [blog post](http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html)."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Article"@en ;
+    skos:closeMatch <http://purl.org/spar/fabio/Article> ;
     skos:topConceptOf cs: ;
 .
 
@@ -268,6 +294,7 @@ cs:
         :Policy ,
         schema:Article ,
         schema:Book ,
+        schema:Chapter ,
         schema:DataModel ,
         schema:Dataset ,
         schema:DefinedTermSet ,
@@ -276,6 +303,7 @@ cs:
         schema:Painting ,        
         schema:Photograph ,
         schema:Report ,
+        schema:ResearchProject ,
         schema:Sculpture ,
         schema:SoftwareApplication ,
         schema:SoftwareSourceCode ,
