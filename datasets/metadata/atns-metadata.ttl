@@ -20,6 +20,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:dateModified "2026-08-21"^^xsd:date ;
     schema:description "Spatial features of the Agreements, Treaties and Negotiated Settlements (ATNS) database" ;
     schema:keywords
+ #       <https://data.idnau.org/pid/vocab/atns-subcat/61baccc9-0196-5528-a334-1ebd2c143b73> ,
         "ATNS" ,
         "Agreements" ,
         "Negotiated Settlements" ,
