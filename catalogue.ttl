@@ -4,7 +4,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/reference-resource-register>
     a schema:DataCatalog ;
-    skos:historyNote "This catalogue was was created in 2024 from the listing of IDN vocabs published since 2022"@en ;
+    skos:historyNote 
+"""This catalogue was was created in 2024 from the listing of IDN vocabs published since 2022; 
+Name changed from IDN Reference Data Catalogue to IDN Reference Resource Register in 2026"""@en ;
     schema:codeRepository "https://github.com/idn-au/reference-resource-register/" ;
     schema:contributor <https://kurrawong.ai> ;
     schema:creator <https://linked.data.gov.au/org/idn> ;
