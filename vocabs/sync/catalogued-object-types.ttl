@@ -38,13 +38,25 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:scopeNote "2026-03: This term is proposed to schema.org but not yet accepted, nevertheless it can be used within this vocabulary" ;
 .
 
+:ReferenceDataset
+    a skos:Concept ;
+    skos:historyNote "Created for Indigenous Data Commons project in late 2026"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader schema:Dataset ;
+    skos:definition "A specialised Dataset that is used as an integration point by one or more Datasets."@en ;
+    skos:inScheme cs: ;
+    skos:relatedMatch <https://linked.data.gov.au/def/supermodel/roles/reference-dataset> ;
+    skos:prefLabel "Reference Dataset"@en ;
+.
+
 :SpatialDataset
     a skos:Concept ;
     rdfs:isDefinedBy <https://schema.org> ;
     skos:definition "A specialised form of digital dataset containing spatial objects - features."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Spatial Dataset"@en ;
-    skos:scopeNote "2026-03: This term is proposed to schema.org but not yet accepted, nevertheless it can be used within this vocabulary" ;
+    skos:broader schema:Dataset ;
+    skos:historyNote "2026-03: This term is proposed to schema.org but not yet accepted, nevertheless it can be used within this vocabulary" ;
     skos:topConceptOf cs: ;
 .
 
@@ -244,5 +256,5 @@ cs:
     schema:dateModified "2026-08-03"^^xsd:date ;
     schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
     schema:publisher <https://linked.data.gov.au/org/idn> ;
-    schema:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
+    schema: <https://linked.data.gov.au/def/reg-statuses/stable> ;
 .
