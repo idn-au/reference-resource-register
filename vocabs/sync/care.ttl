@@ -218,7 +218,7 @@ cs:
         [
             a prov:Derivation ;
             prov:entity cs: ;
-            prov:hadRole <https://linked.data.gov.au/def/vocdermods/none> ;
+            schema:hadRole <https://linked.data.gov.au/def/vocdermods/none> ;
         ] ;
     schema:additionalType <https://schema.org/DefinedTermSet> ;
     schema:citation "https://doi.org/10.5334/dsj-2020-043"^^xsd:anyURI ;
