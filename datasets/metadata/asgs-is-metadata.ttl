@@ -19,17 +19,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     prov:qualifiedAttribution 
         [
             a prov:Attribution ;
-            prov:hadRole <https://linked.data.gov.au/def/data-roles/custodian> ;
+            schema:roleName <https://linked.data.gov.au/def/data-roles/custodian> ;
             schema:agent <https://linked.data.gov.au/org/abs> ;
         ] ,
         [
             a prov:Attribution ;
-            prov:hadRole <https://linked.data.gov.au/def/data-roles/subjectAgentRepresentative> ;
+            schema:roleName <https://linked.data.gov.au/def/data-roles/subjectAgentRepresentative> ;
             schema:agent <https://data.idnau.org/pid/org/abs-coatsis> ;
         ] ,
         [
             a prov:Attribution ;
-            prov:hadRole <https://linked.data.gov.au/def/data-roles/rightsHolder> ;
+            schema:roleName <https://linked.data.gov.au/def/data-roles/rightsHolder> ;
             schema:agent <https://linked.data.gov.au/org/abs> ;
         ] ;
     schema:additionalType <https://data.idnau.org/pid/vocab/cat-obj-types/SpatialDataset> ;
