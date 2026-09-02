@@ -59,7 +59,7 @@ cs:
     prov:qualifiedAttribution
         [
             a prov:Attribution ;
-            prov:hadRole dataroles:custodian ;
+            schema:roleName dataroles:custodian ;
             schema:agent
                 [
                     a schema:Person ;
