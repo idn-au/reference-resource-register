@@ -85,7 +85,7 @@ ont:
     skos:historyNote """2026-02 NJC: made OntPub-conformant
 
 2025-09 LK: created""" ;
-    schema:additionalType <https://schema.org/DataModel> ;
+    schema:additionalType schema:DataModel ;
     schema:codeRepository "https://github.com/idn-au/reference-resource-register"^^xsd:anyURI ;
     schema:creator kai: ;
     schema:dateCreated "2025-09-23"^^xsd:date ;
