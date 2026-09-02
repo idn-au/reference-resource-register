@@ -146,7 +146,7 @@ cs:
     prov:qualifiedAttribution
         [
             a prov:Attribution ;
-            prov:hadRole dataroles:custodian ;
+            schema:roleName dataroles:custodian ;
             schema:agent
                 [
                     a schema:Person ;
@@ -158,7 +158,7 @@ cs:
         [
             a prov:Derivation ;
             prov:entity cs: ;
-            prov:hadRole <https://linked.data.gov.au/def/vocdermods/none> ;
+            schema:roleName <https://linked.data.gov.au/def/vocdermods/none> ;
         ] ;
     schema:additionalType <https://schema.org/DefinedTermSet> ;
     schema:creator <https://linked.data.gov.au/org/idn> ;
