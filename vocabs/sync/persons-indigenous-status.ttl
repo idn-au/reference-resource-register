@@ -54,7 +54,7 @@ cs:
         [
             a prov:Derivation ;
             prov:entity cs: ;
-            prov:hadRole <https://linked.data.gov.au/def/vocdermods/none> ;
+            schema:roleName <https://linked.data.gov.au/def/vocdermods/none> ;
         ] ;
     schema:additionalType <https://schema.org/DefinedTermSet> ;
     schema:copyrightNotice "(c) Indigenous Data Network, 2025" ;
