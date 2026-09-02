@@ -35,7 +35,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
                 ] ;
         ] ;
     schema:additionalType 
-  #     <https://data.idnau.org/pid/vocab/cat-obj-types/ReferenceDataset> ,
         <https://data.idnau.org/pid/vocab/cat-obj-types/SpatialDataset> ;
     schema:citation "http://www.nntt.gov.au/assistance/Geospatial/Pages/DataDownload.aspx"^^xsd:anyURI ;
     schema:copyrightNotice "National Native Title Tribunal, (c) Commonwealth of Australia" ;
