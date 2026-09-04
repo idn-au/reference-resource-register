@@ -20,8 +20,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:provenance "Created for the IDN project, 2022"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The organisation comprises of indigenous persons" ;
+    skos:definition "The organisation comprises indigenous persons that meet the Office of the Registrar of Indigenous Corporations (ORIC) indigeneity requirement." ;
+    skos:historyNote "Office of the Registrar of Indigenous Coporations, Policy Statement 11." ;
+    schema:citation "https://www.oric.gov.au/for-corporations/corporate-governance/indigeneity-requirement"^^xsd:anyURI ;
     skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
     skos:prefLabel "Indigenous Persons Organisation"@en ;
 .
 
